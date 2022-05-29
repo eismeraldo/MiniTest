@@ -1,0 +1,5 @@
+
+Das Konfigurationsfile muss so wie es ist, in das lvgl Verzeichnis kopiert werden, ansonsten gibt es Kompiler Fehler.
+
+.pio\libdeps\esp32doit-devkit-v1\lvgl
+.pio\libdeps\native\lvgl

@@ -1,5 +1,7 @@
 #pragma once
 
+#include <lvgl.h>
+
 class CalcService {
    public:
     /**
@@ -9,7 +11,15 @@ class CalcService {
      * @param pNbr2
      * @return int sum
      */
-    int add(int pNbr1, int pNbr2) { return pNbr1 + pNbr2; }
+    int add(int pNbr1, int pNbr2) {
+        LV_LOG_USER("Start");
+
+        // int a = 0;
+        // a++;
+        // a--;
+        // int v = pNbr1 / a;
+        return pNbr1 + pNbr2;
+    }
 
     /**
      * @brief Subtraction
@@ -23,7 +33,7 @@ class CalcService {
     /**
      * @brief Singleton Methode.
      *
-     * @return AktorService&
+     * @return CalcService&
      */
     static CalcService& instance() {
         static CalcService s_instance;
